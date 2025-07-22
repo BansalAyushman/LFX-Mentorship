@@ -12,7 +12,7 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       "edu.berkeley.cs" %% "chisel3" % chiselVersion,
       "edu.berkeley.cs" %% "chiseltest" % "0.5.6" % "test",
-      "org.scalatest" %% "scalatest" % "3.2.0" % "test",
+      "org.scalatest" %% "scalatest" % "3.2.0" % "test"
     ),
     scalacOptions ++= Seq(
       "-language:reflectiveCalls",
@@ -21,5 +21,5 @@ lazy val root = (project in file("."))
       "-Xcheckinit",
       "-Ymacro-annotations",
     ),
-    addCompilerPlugin("edu.berkeley.cs" % "chisel3-plugin" % chiselVersion cross CrossVersion.full),
+    addCompilerPlugin("edu.berkeley.cs" % "chisel3-plugin" % chiselVersion cross CrossVersion.full)
   )
